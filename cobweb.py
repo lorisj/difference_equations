@@ -4,7 +4,7 @@ def myplotter(plt, data1, data2, param_dict):
     out = plt.plot(data1, data2, **param_dict)
     return out
 def g(c):
-    r=2
+    r=3
     return r*c*(1-c)
 def f(n):
     initCond = 0.01
@@ -43,13 +43,14 @@ def pt():
 
 
 plot1 = plt.figure(1)
+
+pt()
 plot1.set_size_inches(18.5, 10.5, forward=True)
-pt()
 plot2 = plt.figure(2)
-plot2.set_size_inches(18.5, 10.5, forward=True)
+
 pt()
+plot2.set_size_inches(18.5, 10.5, forward=True)
 
 
-
-plt2.xlim([0.56, 0.76])
-plt2.ylim([0.5,0.8])
+plt.xlim([0.56, 0.76])
+plt.ylim([0.5,0.8])
