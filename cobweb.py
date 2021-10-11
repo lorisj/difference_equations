@@ -17,6 +17,7 @@ def f(n):
     
 xarr = [f(1)]
 yarr = [0]
+a= []
 for i in range(1,100):
     a.append(f(i))
     xarr.append(f(i))
@@ -52,7 +53,3 @@ pt()
 
 plt2.xlim([0.56, 0.76])
 plt2.ylim([0.5,0.8])
-
-
-
-
